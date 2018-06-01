@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Website Title -->
+    <title>HandShare - Professional web Donation and Rescue</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel=stylesheet href=css/ui-block.css>
+    <!-- Lightbox -->
+    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+    <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+    <!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+    <!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Animations -->
+    <link href="css/jq.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom Favicon -->
+    <link href="img/favicon.ioc.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <!--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+</head>
+
+<!-- ****************************** Preloader ************************** -->
+<div id="preloader"></div>
+
+
+<!-- ==========================
+HEADER SECTION
+=========================== -->
+<header id="home">
+    <!-- creative menu -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="menu-wrap">
+                <nav class="menu">
+                    <!-- Menu Links -->
+                    <div class="icon-list">
+                        <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+                        <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+                        <a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+                        <a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+
+                        <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+                    </div>
+                </nav>
+
+            </div>
+            <button class="menu-button" id="open-button"></button><!-- menu button -->
+        </div><!--/row-->
+    </div><!--/container-->
+    <!-- Header Image -->
+
+
+
+    <section class="hero " id="hero">
+
+        <div class="container">
+            <!-- WELCOME TEXT -->
+            <div class="row">
+                <div style="width:100%;heigth:100%;text-align:center">
+
+                    <h1 class="animated fadeInDown">
+                        <img src="img/logo1.png" style="width:200px;height:auto; display:block; margin:0 auto;">
+                    </h1><!-- Title -->
+
+                    <h3 class="animated fadeInUp delay-05s"><span class="rotate">基于Nebluas下的区块链透明化募捐</span></h3><!-- Text Rotator -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Slider Button (don't edit!)-->
+            <div class="row">
+                <div class="col-md-12 text-right navicon">
+                    <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+            </div>
+            <!-- HEADER HEADLINE -->
+
+            <div class="row">
+
+            </div>
+            <!-- Learn More Button -->
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+                        <p>更多</p>
+                        <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Image End -->
+</header>
+<!-- ==========================
+HEADER SECTION END
+=========================== -->
+
+
+
+
+<!-- ==========================
+ABOUT SECTION
+=========================== -->
+<section class="intro text-center section-padding color-bg" id="about" style=" background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;">
+    <div class="container">
+        <!-- WELCOME TEXT -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow"><span>什么是 HandShare 投票</span></h1><!-- Headline -->
+                <!-- about / welcome text -->
+                <ul class="row mds-des-list introduce">
+                    <p>•基于星云链的、去中心化的、开源的相互保障合约投票募捐</p>
+                    <p>•任何人都可以利用Address地址来获得投票期间内的投票权</p>
+                    <p>•通过用户使用投票权会得到对应的100枚HandShare,但是会失去一票投票权</p>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="spacer-cta text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a href="index.html#portfolio" class="outline-btn" >开始投票</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<label id="size" style="background-color: rgba(255, 138, 0, 0)"></label>
+
+<section class="swag text-center" id="portfolio">
+    <div class="container">
+        <!-- Headline -->
+        <div class="row">
+            <h1 class="arrow">
+                针对贫困人群
+               <span>投票倒计时
+
+
+
+                   <label id="day"></label>天
+                   <label id="hour">:</label>小时
+                   <label id="afterMin"></label>秒</span>
+
+            </h1>
+        </div>
+
+    </div>
+</section>
+
+<h1></h1>
+<p></p>
+<div align="center" >
+
+
+
+    <section class="content bgcolor-3">
+        <div align="center" >
+            <button id="getTicket" class="btn btn-info" type="submit" >
+                <i class="glyphicon glyphicon-heart bigger-110" ></i>
+                获取投票权
+            </button>
+        </div>
+				<span class="input input--kyo">
+					<input id ="address" class="input__field input__field--kyo" type="text" id="input-19" />
+					<label class="input__label input__label--kyo" for="input-19">
+                        <span class="input__label-content input__label-content--kyo">Put Address:</span>
+                    </label>
+				</span>
+        <div align="center" >
+            <button id="getInfor" class="btn btn-info" type="submit">
+                <i class="glyphicon glyphicon-heart bigger-110" ></i>
+                查看投票权
+            </button>
+        </div>
+    </section>
+
+<p>
+
+</p>
+    <div   align="center">
+        <div class="row">
+
+            <div class="col-md-3">拥有的票数:<h2 id="ticket"></h2></div>
+            <div class="col-md-3">获得的票数:<h2 id="countTicket"></h2></div>
+            <div class="col-md-3">该address的HandShare数量:<h2 id="handshare"></h2></div>
+            <div class="col-md-3">已经投放的HandShare:<h2 id="HandShareCount"></h2></div>
+        </div>
+    </div>
+</div>
+    <p></p>
+
+
+</div>
+<p></p>
+
+<div align="center" >
+
+</div>
+<h1></h1>
+<div class="container">
+    <div class="row row-offset-0">
+
+        <!-- PORTFOLIO ITEM 1 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="overlay-effect effects clearfix">
+                <div class="img">
+                    <img class="grayscale" src="img/timg.jpg" alt="Portfolio Item">
+                </div>
+            </div>
+            <p></p>
+            <div>票数:<label id="firstTicket"></label></div>
+            <p></p>
+            <div align="center" >
+                <button id="first" class="btn btn-info" type="submit" style="background-color: rgba(255,77,77,0.97)">
+                    <i class="glyphicon glyphicon-heart bigger-110" ></i>
+                    投票
+                </button>
+
+            </div>
+        </div>
+        <!-- PORTFOLIO ITEM END -->
+
+        <!-- PORTFOLIO ITEM 2 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="overlay-effect effects clearfix" >
+                <div class="img">
+                    <img class="grayscale" src="img/timg2.jpg" alt="Portfolio Item">
+                </div>
+                <p></p>
+                <div>票数:<label id="secondTicket"></label></div>
+                <p></p>
+                <div align="center" >
+                    <button id="second" class="btn btn-info" type="submit" style="background-color: rgba(255,77,77,0.97)">
+                        <i class="glyphicon glyphicon-heart bigger-110" ></i>
+                        投票
+                    </button>
+
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <!-- PORTFOLIO ITEM END -->
+
+        <!-- PORTFOLIO ITEM 3 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="overlay-effect effects clearfix" >
+                <div class="img">
+                    <img class="grayscale" src="img/timg3.jpg" alt="Portfolio Item">
+                </div>
+            </div>
+            <p></p>
+            <div>票数:<label id="thirdTicket"></label></div>
+            <p></p>
+            <div align="center" >
+                <button id="third" class="btn btn-info" type="submit" style="background-color: rgba(255,77,77,0.97)">
+                    <i class="glyphicon glyphicon-heart bigger-110" ></i>
+                    投票
+                </button>
+
+            </div>
+
+        </div>
+        <!-- PORTFOLIO ITEM END -->
+
+        <!-- PORTFOLIO ITEM 4 -->
+        <div class="col-md-3 col-sm-6 ">
+            <div class="overlay-effect effects clearfix">
+                <div class="img">
+                    <img class="grayscale" src="img/timg4.jpg" alt="Portfolio Item">
+                </div>
+            </div>
+            <p></p>
+            <div>票数:<label id="fourTicket"></label></div>
+            <p></p>
+            <div align="center" >
+                <button id="four" class="btn btn-info" type="submit" style="background-color: rgba(255,77,77,0.97)">
+                    <i class="glyphicon glyphicon-heart bigger-110" ></i>
+                    投票
+                </button>
+
+            </div>
+        </div>
+        <!-- PORTFOLIO ITEM END -->
+      <div>
+          </div>
+        </div>
+    </div>
+      </div>
+    </div><!--/row-->
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<div >
+    <p></p>
+    <section class="swag text-center" id="portfolio">
+        <div class="container">
+            <!-- Headline -->
+            <div class="row">
+                <h1 class="arrow">
+                   实时投票记录
+                    </h1>
+            </div>
+
+        </div>
+    </section>
+    <p></p>
+    <p></p>
+
+    <table class="tablesorter">
+
+
+        <thead>
+        <tr>
+            <th>From address</th>
+            <th>To address</th>
+            <th>Date</th>
+            <th>HandShare</th>
+        </tr>
+        </thead>
+        <tbody id ="box">
+        </tbody>
+    </table>
+
+</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<section class="intro text-center section-padding color-bg" id="about" style=" background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;">
+    <div class="container">
+
+        <!-- WELCOME TEXT -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow"><span>什么是 HandShare 捐助</span></h1><!-- Headline -->
+                <!-- about / welcome text -->
+                <ul class="row mds-des-list introduce">
+                    <p>•HandShare总量是60亿枚，代表全世界每个人携起手来</p>
+                    <p>•我们可以通过投票的方式获得HandShare(一次投票100)</p>
+                    <p>•用户募捐NAS我们会以1:5000的比例反馈用户相应的HandShare</p>
+                    <p>•我们最后会在投票结束之后将用户募捐的NAS发送给获得票数最多的困难家庭</p>
+                    <p></p>
+               <span class="input input--haruki">
+					<input id ="nascoin" class="input__field input__field--haruki" type="text" id="input-1" />
+					<label class="input__label input__label--haruki" for="input-1">
+                        <span class="input__label-content input__label-content--haruki">输入捐助的NAS</span>
+                    </label>
+				</span>
+                    <!--<input  size="21" id ="nascoin" type="text" name="fname" placeholder="输入捐助的NAS"  />-->
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <a href="index.html#service" class="outline-btn" id="donation">开始捐助</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="features text-center section-padding" id="service" >
+    <div class="container">
+        <!-- Headline -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="arrow">Neblaus实时捐助</h1>
+            </div>
+        </div>
+
+    </div>
+    <div >
+        <table class="tablesorter">
+
+
+            <thead>
+            <tr>
+                <th>From address</th>
+                <th>To address</th>
+                <th>捐助的Nas</th>
+                <th>获得的HandShare</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody id ="box2">
+            </tbody>
+        </table>
+
+
+    </div>
+    </div>
+    <p></p>
+</section>
+<p></p>
+</div>
+
+<!-- ==========================
+        SERVICE SECTION
+        =========================== -->
+<section class="features text-center section-padding" id="service" >
+    <div class="container">
+        <!-- Headline -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="arrow">HandShare 的优势</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="services">
+                    <!-- Service Box 1 -->
+                    <div class="col-md-4 wp2 item">
+                        <div class="icon">
+                            <i class="fa fa-camera"></i><!-- Icon -->
+                        </div>
+                        <h2>不可篡改</h2><!-- Title -->
+                        <p></p><!-- Description -->
+                    </div>
+                    <!-- Service Box 2 -->
+                    <div class="col-md-4 wp2 item delay-05s">
+                        <div class="icon">
+                            <i class="fa fa-desktop"></i><!-- Icon -->
+                        </div>
+                        <h2>可追溯</h2><!-- Title -->
+                        <p></p><!-- Description -->
+                    </div>
+                    <!-- Service Box 3 -->
+                    <div class="col-md-4 wp2 item delay-1s">
+                        <div class="icon">
+                            <i class="fa fa-cubes"></i><!-- Icon -->
+                        </div>
+                        <h2>区块链3.0 NAS智能合约</h2><!-- Title -->
+                        <p></p><!-- Description -->
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+   
+
+</section>
+
+
+
+
+
+
+<!-- ==========================
+ABOUT SECTION END
+=========================== -->
+
+
+
+<!-- ==========================
+PORTFOLIO SECTION
+=========================== -->
+
+
+<br>
+<br>
+<br>
+
+
+<!-- ==========================
+CONTACT SECTION
+=========================== -->
+<section class="text-center section-padding contact-wrap" id="contact">
+    <!-- To Top Button -->
+    <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- Social Buttons - use font-awesome, past in what you want -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="social-buttons">
+                    <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
+                    <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
+                    <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
+                    <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
+                    <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==========================
+CONTACT SECTION END
+=========================== -->
+
+
+
+<!-- ==========================
+FOOTER SECTION
+=========================== -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>All Rights Reserved. &copy; 2015 More Templates  </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ==========================
+FOOTER SECTION END
+=========================== -->
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- SmoothScroll -->
+<script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+<!-- Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/waypoints.min.js"></script>
+<!-- classie.js -->
+<script src="js/classie.js"></script>
+<!-- FlexSlider -->
+<script src="assets/flexslider/jquery.flexslider.js"></script>
+<!-- Modernizr -->
+<script src="js/modernizr.js"></script>
+<!-- Text Rotator -->
+<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+<!-- Lightbox.js -->
+<script src="assets/lightbox/js/lightbox.min.js"></script>
+<!-- Theme JavaScript Core -->
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="./js/nebulas.js"></script>
+<script type="text/javascript" src="./js/nebPay.js"></script>
+<!-- Demo styling -->
+
+
+
+<!-- Pick a theme, load the plugin & initialize plugin -->
+<link href="css/theme.default.min.css" rel="stylesheet">
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/jquery.tablesorter.widgets.min.js"></script>
+<!-- TEXT ROTATOR SETTINGS -->
+<script type="text/javascript">
+$(".rotate").textrotator({
+    animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+    separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+    speed: 2000 // How many milliseconds until the next word show.
+});
+var HttpRequest = require("nebulas").HttpRequest;
+var Neb = require("nebulas").Neb;
+var Account = require("nebulas").Account;
+var Transaction = require("nebulas").Transaction;
+var Unit = require("nebulas").Unit;
+var neb = new Neb();
+neb.setRequest(new HttpRequest("https://testnet.nebulas.io"));
+var account, tx, txhash;
+var NebPay = require("nebpay");
+var nebPay = new NebPay();
+var dappAddress ="n1eqbf8U2JQtKEoXTzzjUuVoghMbdrSonbG";
+$(function(){
+    $('table').tablesorter({
+        widgets        : ['zebra', 'columns'],
+        usNumberFormat : false,
+        sortReset      : true,
+        sortRestart    : true
+    });
+}),
+
+window.onload=  setInterval(function(){ callfunction()},1000);
+window.onload=  setInterval(function(){ callfunction2()},15000);
+function callfunction() {
+    var timestamp = Date.parse(new Date());
+
+    var endtimestamp = Date.parse(new Date('2018/06/01 12:00:00'))
+
+    var total = (endtimestamp - timestamp) / 1000;
+    if (total > 0) {
+        var day = parseInt(total / (24 * 60 * 60));//计算整数天数
+        var afterDay = total - day * 24 * 60 * 60;//取得算出天数后剩余的秒数
+        var hour = parseInt(afterDay / (60 * 60));//计算整数小时数
+        var afterHour = total - day * 24 * 60 * 60 - hour * 60 * 60;//取得算出小时数后剩余的秒数
+        var min = parseInt(afterHour / 60);//计算整数分
+        var afterMin = total - day * 24 * 60 * 60 - hour * 60 * 60 - min * 60;//取得算出分后剩余的秒数
+
+        document.getElementById('day').innerText = day;
+        document.getElementById('hour').innerText = hour;
+        document.getElementById('afterMin').innerText = afterMin;
+
+    } else {
+        document.getElementById('day').innerText = 00;
+        document.getElementById('hour').innerText = 00;
+        document.getElementById('afterMin').innerText = 00;
+    }
+
+}
+function callfunction2() {
+    getAddressTicketInfor('n1d3njMuhBZ2aFQT3hn8UmtjwSw2XeKme5K', 'firstTicket');
+    getAddressTicketInfor('n1d3njMuhBZ2aFQT3hn8UmtjwSw2XeKme5K', 'secondTicket');
+    getAddressTicketInfor('n1d3njMuhBZ2aFQT3hn8UmtjwSw2XeKme5K', 'thirdTicket');
+    getAddressTicketInfor('n1d3njMuhBZ2aFQT3hn8UmtjwSw2XeKme5K', 'fourTicket');
+    getCoin();
+    getList();
+    getDonate();
+    function getAddressTicketInfor(address, ticketSort) {
+        var from = dappAddress;
+        var value = "0";
+        var nonce = "0";
+        var gas_price = "1000000";
+        var gas_limit = "2000000";
+
+        var callFunction = "getInfor";
+        var callArgs = '["' + address + '"]';
+        var contract = {
+            "function": callFunction,
+            "args": callArgs
+        }
+
+        neb.api.call(from, dappAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+            resp = resp.result || resp;
+            var JsonResult = eval(resp)
+            Json = JSON.parse(JsonResult);
+
+            document.getElementById(ticketSort).innerText = Json.countTicket;
+        }).catch(function (err) {
+            console.log("error:" + err.message);
+        })
+    }
+    function getCoin() {
+        var from = dappAddress;
+        var value = "0";
+        var nonce = "0";
+        var gas_price = "1000000";
+        var gas_limit = "2000000";
+        var callFunction = "getCoin";
+        var contract = {
+            "function": callFunction,
+
+        }
+        neb.api.call(from, dappAddress, value, nonce, gas_price, gas_limit, contract).then(
+            function (resp) {
+
+                var result = resp.result;
+
+                document.getElementById("HandShareCount").innerText = result;
+            }).catch(function (err) {
+                console.log("error:" + err.message);
+            })
+    }
+    function getList() {
+        var from = dappAddress;
+        var value = "0";
+        var nonce = "0";
+        var gas_price = "1000000";
+        var gas_limit = "2000000";
+
+        var callFunction = "getList";
+        var contract = {
+            "function": callFunction,
+        }
+
+        neb.api.call(from, dappAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+            resp = resp.result || resp;
+            var JsonResult = eval(resp)
+
+//            console.log(JsonResult)
+            var endList="";
+            console.log(JsonResult)
+            for(var i=0 ;i<JsonResult.split("***").length-1;i++) {
+                var list="";
+                for (var j = 0; j < JsonResult.split("***")[i].split(",").length; j++) {
+//                    console.log(JsonResult.split("***")[i].split(",")[j])
+                    list += "<td>" + JsonResult.split("***")[i].split(",")[j] +"</td>";
+                }
+                console.log(list)
+
+                endList=endList+"<tr>"+list+ "<td>100枚</td>"+"</tr>"
+            }
+            document.getElementById('box').innerHTML = endList;
+//
+        }).catch(function (err) {
+            console.log("error:" + err.message);
+        });
+
+
+        }
+    function getDonate() {
+        var from = dappAddress;
+        var value = "0";
+        var nonce = "0";
+        var gas_price = "1000000";
+        var gas_limit = "2000000";
+
+        var callFunction = "getDonate";
+        var contract = {
+            "function": callFunction,
+        }
+
+        neb.api.call(from, dappAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+            resp = resp.result || resp;
+            var JsonResult = eval(resp)
+
+//            console.log(JsonResult)
+            var endList="";
+            console.log(JsonResult)
+            for(var i=0 ;i<JsonResult.split("***").length-1;i++) {
+                var list="";
+                for (var j = 0; j < JsonResult.split("***")[i].split(",").length; j++) {
+//                    console.log(JsonResult.split("***")[i].split(",")[j])
+                    list += "<td>" + JsonResult.split("***")[i].split(",")[j] +"</td>";
+                }
+                console.log(list)
+
+                endList=endList+"<tr>"+list+"</tr>"
+            }
+            document.getElementById('box2').innerHTML = endList;
+//
+        }).catch(function (err) {
+            console.log("error:" + err.message);
+        });
+
+
+    }
+
+
+}
+$("#getTicket").click(function() {
+
+    var to = dappAddress;
+
+    var value = "0";
+    var callArgs =  ""  //参数格式为参数数组的JSON字符串, 比如'["arg"]','["arg1","arg2]'
+    var callFunction = "donor";
+    var callArgs;
+
+    var options = {
+
+        //callback 是交易查询服务器地址,
+        //callback: NebPay.config.mainnetUrl //在主网查询(默认值)
+        callback: "https://testnet.nebulas.io" //在测试网查询
+    }
+    serialNumber = nebPay.call(to, value, callFunction, callArgs, options);
+}),
+
+
+
+
+
+
+
+$("#getInfor").click(function() {
+
+    var from = dappAddress;
+    var value = "0";
+    var nonce = "0";
+    var gas_price = "1000000";
+    var gas_limit = "2000000";
+
+    var callFunction = "getInfor";
+    var address=document.getElementById("address");
+    var account =Account.fromAddress(address.value)
+    var callArgs='["'+address.value+'"]'
+
+    alert("正在查询。。。。。。")
+    var contract = {
+        "function":callFunction,
+        "args": callArgs
+    }
+
+    neb.api.call(from,dappAddress,value,nonce,gas_price,gas_limit,contract).then(function(resp){
+        resp = resp.result || resp;
+        var JsonResult=eval(resp)
+        Json= JSON.parse(JsonResult);
+
+        document.getElementById('ticket').innerText = Json.ticket;
+        document.getElementById('countTicket').innerText = Json.countTicket;
+
+    }).catch(function(err){
+        console.log("error:"+err.message);
+    })
+
+    callFunction = "findUserHandShareCount";
+    contract = {
+        "function":callFunction,
+        "args": callArgs
+    }
+    neb.api.call(from, dappAddress, value, nonce, gas_price, gas_limit, contract).then(function (resp) {
+        resp = resp.result || resp;
+        var JsonResult = eval(resp)
+//        console.log(JsonResult)
+
+        if(JsonResult>=0) {
+                document.getElementById('handshare').innerText = JsonResult;
+            }else
+                document.getElementById('handshare').innerText = 0;
+    }).catch(function (err) {
+        console.log("error:" + err.message);
+    });
+}),
+
+$("#first").click(function(){
+
+    var to = dappAddress;
+    var value = "0";
+
+    var callFunction = "vote";
+
+    var callArgs = '["n1d3njMuhBZ2aFQT3hn8UmtjwSw2XeKme5K"]';
+
+
+    var options = {
+
+        //callback 是交易查询服务器地址,
+        //callback: NebPay.config.mainnetUrl //在主网查询(默认值)
+        callback: "https://testnet.nebulas.io" //在测试网查询
+    }
+//发送交易(发起智能合约调用)
+    serialNumber = nebPay.call(to, value, callFunction,callArgs, options);
+
+
+}),
+
+$("#donation").click(function() {
+    var to = dappAddress;
+    var value=document.getElementById("nascoin").value;
+    if(value===null) value=0;
+    var callFunction = "donate";
+    var contract = {
+        "function":callFunction,
+
+    }
+    var callArgs = ""
+    var options = {
+
+        //callback 是交易查询服务器地址,
+        //callback: NebPay.config.mainnetUrl //在主网查询(默认值)
+        callback: "https://testnet.nebulas.io" //在测试网查询
+    }
+    var serialNumber = nebPay.call(to, value, callFunction,callArgs, options)
+
+
+
+})
+
+</script>
+
+
+</body>
+</html>
